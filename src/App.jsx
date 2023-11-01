@@ -10,6 +10,12 @@ function App() {
   const [switch2, setSwitch2] = useState(false);
   const [switch3, setSwitch3] = useState(false);
 
+  const resetSwitches = () => {
+    setSwitch1(false);
+    setSwitch2(false);
+    setSwitch3(false);
+  };
+
   return (
     <>
       <Header />
@@ -37,6 +43,9 @@ function App() {
           {switch1 && switch2 && switch3 ? "Go !" : "No Way !"}
         </button>
       </main>
+      <div className="emergency">
+        <button onClick={resetSwitches}>EMERGENCY BUTTON</button>
+      </div>
       <Footer />
     </>
   );

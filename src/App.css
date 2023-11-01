@@ -19,6 +19,7 @@ main {
   justify-content: space-around;
   align-items: center;
   margin: 20vh 30vw;
+  flex-wrap: wrap;
 }
 
 .switches {
@@ -33,6 +34,22 @@ button {
   padding: 10px 20px;
   border: 1px solid #908f8f;
   margin-left: 8px;
+}
+
+.emergency {
+  text-align: center;
+}
+
+.emergency button {
+  background-color: lightyellow;
+  font-weight: 600;
+  padding: 20px;
+  transition: all 1s ease;
+}
+
+.emergency button:hover {
+  background-color: orangered;
+  color: white;
 }
 
 footer {
